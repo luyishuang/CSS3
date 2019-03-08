@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        legend{
+            color: red;
+        }
+        .xing{
+            color: red;
+        }
+        .time1{
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>毕业生信息</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>
+                学生信息
+            </legend>
+            姓&nbsp;&nbsp;名 <input type="text" name="name1" autofocus required placeholder="请输入姓名"/><span class="xing"> *</span><br>
+            学&nbsp;&nbsp;号 <input type="number" name="number1" required placeholder="请输入学号"/><span class="xing"> *</span><br>
+            手&nbsp;&nbsp;机 <input type="tel" name="tel1" required placeholder="请输入手机号"/><span class="xing"> *</span><br>
+            邮&nbsp;&nbsp;箱 <input type="email" name="email1"  required placeholder="请输入邮箱地址"/><span class="xing"> *</span><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                录取情况
+            </legend>
+            录取学校 <input type="text" name="school" />
+            <br>
+            入学成绩 <input type="number" name="grade" required/><br>
+            入学时间 <input type="date" name="date1" class="time1"/><br>
+        </fieldset>
+        <br>
+        <input type="submit" />
+    </form>
+</body>
+<script>
+</script>
+</html>
