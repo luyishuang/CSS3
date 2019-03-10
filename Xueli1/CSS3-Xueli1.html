@@ -44,7 +44,16 @@
             <legend>
                 录取情况
             </legend>
-            录取学校 <input type="text" name="school" />
+            录取学校 
+            <input type="search" name="sea1" list="schools" />
+            <datalist id="schools">  
+                    <option></option>
+                    <option>河北师范大学</option>
+                    <option>燕山大学</option>
+                    <option>北京大学</option>
+                    <option>清华大学</option>
+                    <option>复旦大学</option>               
+            </datalist>
             <br>
             入学成绩 <input type="number" name="grade" required/><br>
             入学时间 <input type="date" name="date1" class="time1"/><br>
