@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 417px;
+            height: 230px;
+            border:10px solid #f5f5f5;
+            border-radius: 5px;
+        }
+        #shop{
+            width: 193px;
+            height: 43px;
+            margin: 5px 0 0 5px;
+        }
+        #search{
+            width: 140px;
+            height: 36px;  
+        }
+        #shanchu{
+            float: right;
+            margin:0 5px 0 0;
+            background: #e0e0e0;
+            width: 23px;
+            height: 23px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+        #zuijin{
+            font-size: 14px;
+            margin: 10px 0 0 5px;
+        }
+        #tianjia{
+            background: #e0e0e0;
+            display: inline-block;
+            border: 1px solid #e0e0e0;
+            margin: 10px 3px 0 5px;
+        }
+        #neirong{
+            width: 417px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input type="text" name="goods" autofocus placeholder="请输入想查找的商品" id="shop"/>
+        <button id="search">搜索</button>
+        <p id="zuijin">最近搜索</p>
+        <div id="neirong"></div>
+        <div id="shanchu">X</div>
+    </div>
+</body>
+
+<script>
+    var shop = document.getElementById("shop");
+    var search = document.getElementById("search");
+    var neirong = document.getElementById("neirong");
+    var shanchu = document.getElementById("shanchu");
+
+    //查找
+    search.onclick = function(){
+        var value = shop.value;
+        var time = (new Date()).getTime();
+        if(!value){
+            alert("你未输入搜索内容");
+            return false;
+        }
+        else{
+            for(var i = 0; i < localStorage.length; i ++){
+ 	            if(value == localStorage.getItem(localStorage.key(i))){
+ 	                localStorage.removeItem(localStorage.key(i));
+ 	            }
+            }
+ 	        localStorage.setItem(time,value);
+            var newneirong = document.createElement("div");
+            newneirong.innerHTML = value;
+            newneirong.setAttribute("id","tianjia");
+            neirong.appendChild(newneirong);
+ 	    }
+    }
+
+ 	//清除记录
+ 	shanchu.onclick = function(){
+        if(window.confirm("是要全部清除吗？")){
+            localStorage.clear();
+            var boxes = neirong.childNodes;
+            for(var i = boxes.length - 1; i >= 0; i --){
+                neirong.removeChild(boxes[i]); 
+            }
+        }
+ 	}
+
+    for(var i = 0; i < localStorage.length;i ++) {
+        var key = localStorage.key(i);
+        var xin = localStorage.getItem(key);
+        var newneirong = document.createElement("div");
+        newneirong.innerHTML = xin;
+        newneirong.setAttribute("id","tianjia");
+        neirong.appendChild(newneirong);
+    }
+</script>
+</html>
