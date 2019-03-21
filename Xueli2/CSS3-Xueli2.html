@@ -57,6 +57,7 @@
 </body>
 
 <script>
+    //获取元素
     var shop = document.getElementById("shop");
     var search = document.getElementById("search");
     var neirong = document.getElementById("neirong");
@@ -95,13 +96,14 @@
         }
  	}
 
-    for(var i = 0; i < localStorage.length;i ++) {
+    //显示在"最近搜索"里面
+    for(var i = localStorage.length - 1; i >= 0 ;i --) {
         var key = localStorage.key(i);
         var xin = localStorage.getItem(key);
         var newneirong = document.createElement("div");
-        newneirong.innerHTML = xin;
         newneirong.setAttribute("id","tianjia");
         neirong.appendChild(newneirong);
+        newneirong.innerHTML = xin;
     }
 </script>
 </html>
