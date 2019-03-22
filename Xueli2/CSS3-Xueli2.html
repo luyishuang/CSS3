@@ -50,6 +50,10 @@
         #neirong{
             width: 390px;
         }
+        #wu{
+            float: left;;
+            margin:50px 0px 0 5px ;
+        }
     </style>
 </head>
 <body>
@@ -57,6 +61,7 @@
         <input type="text" name="goods" autofocus placeholder="请输入想查找的商品" id="shop"/>
         <button id="search">搜索</button>
         <p id="zuijin">最近搜索</p>
+        <p id="wu">无存储记录</p>
         <div id="neirong"></div>
         <div id="shanchu">X</div>
     </div>
@@ -68,9 +73,12 @@
     var search = document.getElementById("search");
     var neirong = document.getElementById("neirong");
     var shanchu = document.getElementById("shanchu");
+    var wu = document.getElementById("wu");
+
 
     //查找
     search.onclick = function(){
+        wu.innerHTML = "";
         var value = shop.value;
         var time = (new Date()).getTime();
         if(!value){
@@ -100,16 +108,20 @@
                 neirong.removeChild(boxes[i]); 
             }
         }
+        wu.innerHTML = "无存储记录";
  	}
 
     //显示在"最近搜索"里面
-    for(var i = localStorage.length - 1; i >= 0 ;i --) {
-        var key = localStorage.key(i);
-        var xin = localStorage.getItem(key);
-        var newneirong = document.createElement("div");
-        newneirong.setAttribute("id","tianjia");
-        neirong.appendChild(newneirong);
-        newneirong.innerHTML = xin;
+    if(localStorage.length >0){
+        wu.innerHTML = "";
+        for(var i = localStorage.length - 1; i >= 0 ;i --) {
+            var key = localStorage.key(i);
+            var xin = localStorage.getItem(key);
+            var newneirong = document.createElement("div");
+            newneirong.setAttribute("id","tianjia");
+            neirong.appendChild(newneirong);
+            newneirong.innerHTML = xin;
+        }
     }
 </script>
 </html>
