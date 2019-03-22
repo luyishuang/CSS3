@@ -52,7 +52,7 @@
         }
         #wu{
             float: left;;
-            margin:50px 0px 0 5px ;
+            margin:10px 0px 0 5px ;
         }
     </style>
 </head>
@@ -79,10 +79,14 @@
     //查找
     search.onclick = function(){
         wu.innerHTML = "";
+        wu.style.margin = "10px 0 0 0";
         var value = shop.value;
         var time = (new Date()).getTime();
         if(!value){
             alert("你未输入搜索内容");
+            wu.innerHTML = "无存储记录";
+            wu.style.margin = "10px 0 0 5px";
+
             return false;
         }
         else{
@@ -109,11 +113,14 @@
             }
         }
         wu.innerHTML = "无存储记录";
+        wu.style.margin = "10px 0 0 5px";
+
  	}
 
     //显示在"最近搜索"里面
     if(localStorage.length >0){
         wu.innerHTML = "";
+        wu.style.margin = "10px 0 0 0";
         for(var i = localStorage.length - 1; i >= 0 ;i --) {
             var key = localStorage.key(i);
             var xin = localStorage.getItem(key);
@@ -122,6 +129,11 @@
             neirong.appendChild(newneirong);
             newneirong.innerHTML = xin;
         }
+    }
+    else{
+        wu.innerHTML = "无存储记录";
+        wu.style.margin = "10px 0 0 5px";
+
     }
 </script>
 </html>
