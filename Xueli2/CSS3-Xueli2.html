@@ -83,8 +83,10 @@
         var time = (new Date()).getTime();
         if(!value){
             alert("你未输入搜索内容");
-            wu.innerHTML = "无存储记录";
-            wu.style.margin = "10px 0 0 5px";
+            if(localStorage.length == 0){
+                wu.innerHTML = "无存储记录";
+                wu.style.margin = "10px 0 0 5px";
+            }
             return false;
         }
         else{
@@ -98,8 +100,8 @@
             newneirong.innerHTML = value;
             newneirong.setAttribute("id","tianjia");
             neirong.appendChild(newneirong);
- 	    }
-    }
+        }       
+ 	}
 
  	//清除记录
  	shanchu.onclick = function(){
