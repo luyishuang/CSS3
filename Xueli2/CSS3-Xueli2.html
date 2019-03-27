@@ -77,6 +77,7 @@
 
     //查找
     search.onclick = function(){
+        // var isSet = false;
         wu.innerHTML = "";
         wu.style.margin = "10px 0 0 0";
         var value = shop.value;
@@ -92,14 +93,20 @@
         else{
             for(var i = 0; i < localStorage.length; i ++){
  	            if(value == localStorage.getItem(localStorage.key(i))){
- 	                localStorage.removeItem(localStorage.key(i));
+ 	                // localStorage.removeItem(localStorage.key(i));
+                    //  isSet = true;
+                    //  break;
+                    return;
  	            }
             }
- 	        localStorage.setItem(time,value);
-            var newneirong = document.createElement("div");
-            newneirong.innerHTML = value;
-            newneirong.setAttribute("id","tianjia");
-            neirong.appendChild(newneirong);
+            // if(!isSet){
+ 	            localStorage.setItem(time,value);
+                var newneirong = document.createElement("div");
+                newneirong.innerHTML = value;
+                newneirong.setAttribute("id","tianjia");
+                neirong.appendChild(newneirong);
+            // }
+
         }       
  	}
 
