@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 450px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .gift{
+            color: brown;
+            font-size: 80px;
+            line-height: 200px;
+
+        }
+        #canvas{
+            float: left;
+            border:3px solid rgb(74, 137, 209);
+            border-radius: 5px;
+            margin:-200px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="gift"></span>
+        <canvas id="canvas" width="450px" height="200px"></canvas>        
+    </div>
+</body>
+
+<script>
+    //获取canvas
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    
+    //获取元素
+    var box = document.getElementsByClassName("box")[0];
+    var gift = document.getElementsByClassName("gift")[0];
+    
+    //奖项设置
+    var gifts = ["谢谢惠顾","谢谢惠顾","谢谢惠顾","谢谢惠顾","谢谢惠顾","谢谢惠顾","谢谢惠顾","谢谢惠顾","谢谢惠顾","谢谢惠顾","一等奖","二等奖",
+                 "二等奖","二等奖","三等奖","三等奖","三等奖","三等奖","三等奖","三等奖"];
+    var m = Math.floor(Math.random()*20);
+    gift.innerHTML = gifts[m];
+
+    //灰色蒙罩
+    context.beginPath();
+    context.fillStyle = "#837e7e";
+    context.globalCompositeOperation = "source-over";
+    context.fillRect(0,0,450,200);
+    context.fill();
+    context.closePath();
+
+    //刮奖事件设置
+    function funImageData(){
+        var area = 0;
+        var imageData = context.getImageData(0,0,450,200);
+        var pixels = imageData.data;
+        for(var i = 0;i < pixels.length;i ++){
+            if(pixels[i] == 0){
+                area ++;
+            }
+        }
+        // 涂抹85%之后使得灰色蒙罩全部刮开
+        if(area >= pixels.length*0.85){
+            context.fillRect(0,0,450,200);
+            context.fill();
+        }
+    }
+
+    var flag = 0;//是否正在刮奖的标志
+    // 鼠标按下事件
+    canvas.onmousedown = function(ev){
+        var ev = ev||window.event;
+        flag ++;
+        x = ev.clientX - box.offsetLeft;
+        y = ev.clientY - box.offsetTop;
+        context.beginPath();
+        context.arc(x,y,30,0,2*Math.PI);
+        context.globalCompositeOperation = "destination-out";
+        context.fill();
+        context.closePath();
+        funImageData(); 
+    }
+
+    //鼠标抬起事件
+    canvas.onmouseup = function(){
+        flag = 0;
+        funImageData(); 
+    }
+
+    // 鼠标移动事件
+    canvas.onmousemove = function(ev){
+        var ev = ev||window.event;
+        if(flag != 0){
+            x = ev.clientX - box.offsetLeft;
+            y = ev.clientY - box.offsetTop;
+            context.beginPath();
+            context.arc(x,y,30,0,2*Math.PI);
+            context.globalCompositeOperation = "destination-out";
+            context.fill();
+            context.closePath();
+        }
+        funImageData();
+    }
+</script>
+</html>
