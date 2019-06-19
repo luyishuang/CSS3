@@ -1,0 +1,1112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(221, 80, 80);
+}
+ul,li{
+    list-style: none;
+}
+button{
+    outline:none;
+}
+@media screen and (min-width: 751px) {
+    body{
+        background-color:#dddddd;
+    }
+    .pc-none{
+        display: none;
+    }
+    .hei{
+        width: 100%;
+        height: 45px;
+        background: #282828;
+    }
+    .hei>.denglu{
+        margin: 0 auto;
+        width: 1203px;
+        height: 45px;
+    }
+    .text{
+        color: #fff;
+        float: right;
+    }
+    .text>span{
+        height: 45px;
+        line-height: 45px;
+        float: left;
+        background: url(./img/tell.png) no-repeat left;
+        padding: 0 40px;
+        font-size: 20px;
+    }
+    .text>div{
+        float: right;
+        height: 45px;
+        line-height: 45px;
+    }
+    .text>div>a{
+        padding: 0 9px;
+    }
+    #shouye{
+        width: 100%;
+        height: 109px;
+    }
+    .mynav{
+        width: 1203px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .navbar{
+        height: 120px;
+    }
+    .navbar-brand{
+        height: 80px;
+    }
+    .navbar-nav{
+        height: 80px;
+        line-height: 80px;
+        margin-left: 150px;
+    }
+    .navbar-nav>li{
+        margin:0 35px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        display: inline;
+        font-size: 16px;
+        color: #000;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        color: #e8420a;
+        background: none;
+        border-bottom: #e8420a 4px solid;
+    }
+    .navbar-default .navbar-nav>.active>a:hover {
+        color: #e8420a;
+        background: none;
+    }
+    .mycarousel{
+        width: 100%;
+        height: 444px;
+        min-height: 444px;
+        overflow: hidden;
+    }
+    .item img{
+        width: 100%;
+        height: 444px;
+        min-height: 444px;
+    }
+    .youyou{
+        width: 520px;
+        color: #fff;
+        position: absolute;
+        left: 188px;
+        top: 78px;
+    }
+    .youyou1{
+        float: left;
+        font-weight: 300;
+        font-size: 40px;
+        padding-bottom: 18px; 
+    }
+    .youyou2{
+        float: left;
+        padding-top: 18px;
+        font-size: 15px;
+        font-weight: 300;
+        border-top:1px solid #fff;
+    }
+    .youyou3{
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 18px;   
+        font-size: 15px;
+        font-weight: 300;
+        border-bottom:1px solid #fff;
+    }
+    .search{
+        width: 585px;
+        height: 50px;
+        position: absolute;
+        left: 30%;
+        top: 80%;
+        color: #535353;
+        border:4px solid #222222;
+        border-radius: 8px;
+        overflow: hidden;
+        z-index: 999;
+    }
+    .mudidi{
+        width: 145px;
+        height: 50px;
+        float: left;
+        background: #d3d3d8;
+    }
+    .mudidi>span{
+        width: 145px;
+        height: 50px;
+        line-height: 48px;
+        font-size: 16px;
+        padding-left: 60px;
+        background: url(./img/position.png) no-repeat 28px center;
+        display: block;
+    }
+    .riben{
+        width: 312px;
+        height: 50px;
+        margin-top: -3px;
+        font-size: 16px;
+        padding-left: 20px;
+        outline: none;
+    }
+    .sousuo{
+        width: 120px;
+        height: 50px;
+        float: right;
+        background: #cb5405;
+        cursor: pointer;
+    }
+    .sousuo>span{
+        width: 130px;
+        height: 50px;
+        display: block;
+        background: url(./img/search.png) no-repeat 45px 7px;
+    }
+    .che{
+        width: 1203px;
+        height: 365px;
+        margin-top: 25px;
+        background: #14316d;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+    }
+    .jichang{
+        position: absolute;
+        top: 38px;
+        right: 368px;
+        color: #e1e1e1;
+    }
+    .jichang1{
+        display: block;
+        font-size: 36px;
+        padding-bottom:10px;
+    }
+    .jichang2{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+    .jichang3{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+    .cheliang{
+        width: 266px;
+        height: 365px;
+        float: right;
+        text-align: center;
+        color: #fff;
+        background: url(./img/car.png) no-repeat center 65px;
+    }
+    .cheliang>span{
+        display: block;
+        margin-top: 185px;
+        font-size: 25px;
+    }
+    .cheliang>button{
+        width: 178px;
+        height: 52px;
+        margin-top: 40px;
+        font-size: 26px;
+        line-height: 52px;
+        border: 1px solid #fff;
+        background: #14316d;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .hotzi{
+        width: 1203px;
+        height: 135px;
+        text-align: center;
+    }
+    .hotzi>span:first-child {
+        display: inline-block;
+        font-size: 36px;
+        padding: 28px 0 0 29px;
+        letter-spacing: 30px;
+    }
+    .hotzi>span:last-child {
+        font-size: 20px;
+    }
+    .hotimg{
+        width: 1231px;
+        height: 1022px;
+        color: #fff;
+        font-size: 16px;
+        overflow: hidden;
+    }
+    .hotimgzi{
+        width: 588px;
+        height: 98px;
+        padding:16px 0 0 40px;
+        line-height: 32px;
+        background: #000;
+    }
+    .hotimgzi>div>span{
+        font-size: 26px;
+    }
+    .hotimgbig{
+        width: 588px;
+        height: 1022px;
+        float: left;
+    }
+    .hotimgbigdiv2{
+        margin-top: 4px;
+    }
+    .hotimgbig2{
+        width: 609px;
+        height: 1022px;
+        float: right;
+    }
+    .hotimgbig2div1{
+        position: relative;
+        margin-bottom: 4px;
+    }
+    .hotimgbig2div2{
+        width: 610px;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .qian{
+        width: 1203px;
+        height: 213px;        
+        text-align: center;
+    }
+    .qian1{
+        display: block;
+        font-size: 36px;
+        font-weight: 400;
+        padding: 32px 0 0 36px;
+        letter-spacing: 30px;
+    }
+    .qian2{
+        display: block;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .qian3{
+        display: inline-block;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .myqian{
+        width: 1231px;
+        height: 558px;
+        color: #fff;
+    }
+    .myqianimgbig1{
+        position: relative;
+        float: left;
+    }
+    .myqianimgbig1zi{
+        width: 398px;
+        height: 73px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-left: 38px;
+        font-size: 20px;
+        line-height: 73px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .myqianimgbig1zi>span{
+        font-size: 30px;
+    }
+    .myqianimgbig1zi>span>span{
+        font-size: 16px;
+    }
+    .myqianimgbig2{
+        float: right;
+    }
+    .myqianimgbig2div1{
+        float: left;
+        margin-right: 4px;
+    }
+    .myqianimgbig2div1>div>div>span>span{
+        font-size: 18px;
+    }
+    .myqianimgbig2div2{
+        float: right;
+    }
+    .myqianimgbig2>div>div{
+        position: relative;
+        margin-bottom: 4px;
+    }
+    .myqianimgbig2div2>div>div>span>span{
+        font-size: 18px;
+    }
+    .myqianimgbig2>div>div>div{
+        width: 397px;
+        height: 47px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-left: 37px;
+        font-size: 18px;
+        line-height: 47px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .myqianimgbig2>div>div>div>span {
+        font-size: 26px;
+    }
+    .chakanbig{
+        width: 1203px;
+        height: 214px;
+        text-align: center;
+    }
+    .chakan{
+        width: 233px;
+        height: 52px;
+        line-height: 52px;
+        margin-top: 54px;
+        font-size: 26px;
+        border:1px solid #000;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .jiating{
+        width: 100%;
+        height: 345px;
+        background: url(./img/Bbanner.jpg) no-repeat;
+        background-size: cover;
+    }
+    .shimingyuan{
+        width: 100%;
+        height: 1490px;
+        background: url(./img/back.png) no-repeat top center;
+    }
+    .shimingzi{
+        width: 1203px;
+        height: 268px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .shimingzi>span:first-child{
+        display: inline-block;
+        font-size: 32px;
+        margin: 113px 0 12px 0;
+    }
+    .shimingzi>span:last-child{
+        font-size: 17px;
+        font-weight: 380;
+    }
+    .shimingbig{
+        width: 1203px;
+        height: 350px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .shimingbig>div{
+        background: #1b4d7b;
+    }
+    .shimingbig>img{
+        width: 498px;
+        float: left;
+    }
+    .shimingbig>div{
+        width: 705px;
+        height: 350px;
+        float: right;
+        color: #fff;
+    }
+    .shimingbig>div>span{
+        display: block;
+        text-align: center;
+        margin-top: 80px;
+        font-size: 24px;
+    }
+    .shimingbig>div>p{
+        margin: 26px 0 0 125px;
+        line-height: 36px;
+    }
+    .pfuwu{
+        width: 1203px;
+        height: 470px;
+        margin: 0 auto;
+        padding: 4px 0;
+        border-radius: 10px;
+        margin-bottom: 4px;
+        overflow: hidden;
+    }
+    .shimingbig2{
+        width: 1203px;
+        height: 399px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #1c5080;
+        color: #fff;
+        text-align: center;
+    }
+    .shimingbig2div1{
+        width: 930px;
+        height: 300px;
+        margin: 50px auto;
+    }
+    .shimingbig2div1div{
+        float: left;
+        width: 310px;
+        height: 300px;
+        padding-top: 40px;
+        background: url(./img/rorate.png) no-repeat center top;
+    }
+    .shimingbig2div1divzi1{
+        display: block;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .shimingbig2div1divzi2{
+        padding-top:34px;
+    }
+    .miaoshu{
+        text-align: center;
+        margin-top: 80px;
+        line-height: 30px;
+    }
+    .butui{
+        margin-top:65px;
+    }
+    .bottom{
+        width: 100%;
+        height: 528px;
+        background: #000;
+    }
+    .heise{
+        width: 1203px;
+        height: 370px;
+        margin: 0 auto;
+        padding: 48px 0 0 12px;
+        font-size: 14px;
+        color: #fff;
+    }
+    .heise>ul>li>ul{
+        float: left;
+    }
+    .heise>ul>li>ul>li{
+        float: left;
+    }
+    .hezuo{
+        width: 600px;
+        height: 80px;
+        margin-bottom: 25px;
+    }
+    .remenweizhi{
+        width: 1186px;
+        height: 52px;
+        margin-bottom: 30px;
+    }
+    .zhutifuwu{
+        width: 748px;
+        height: 25px;
+        margin-bottom: 30px;
+    }
+    .youqinglianjie{
+        width: 1186px;
+        height: 52px;
+    }
+    .da{
+        padding-right: 23px;
+        padding-bottom: 21px;
+        font-size: 18px;
+    }
+    .xiecheng{
+        width: 111px;
+        padding-top: 2px;
+        text-align: center;
+        margin-right: 16px;
+    }
+    .ali{
+        width: 111px;
+        text-align: center;
+        margin-right: 16px;
+    }
+    .quna{
+        width: 111px;
+        margin-right: 16px;
+        text-align: center;
+    }
+    .su{
+        width: 77px;
+        margin-right: 16px;
+        text-align: center;
+    }
+    .hezuo img{
+        padding-bottom: 12px;
+    }
+    .remenweizhi>ul>li:not(:first-child){
+        padding-right: 16px;
+        line-height: 26px;
+    }
+    .zhutifuwu>ul>li:not(:first-child){
+        padding-right: 16px;
+        line-height: 26px;
+    }
+    .youqinglianjie>ul>li:not(:first-child){
+        padding-right: 16px;
+        line-height: 26px;
+    }
+    .bottom{
+        width: 100%;
+    }
+    .last{
+        width: 100%;
+        height: 158px;
+        font-size: 17px;
+        text-align: center;
+        border-top: #404040 solid 1px;
+        padding-top: 43px;
+    }
+    .last>span {
+        color: #fff;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    body{
+        background: #f5f5f5;
+    }
+    .phone-none {
+        display: none;
+    }
+    #shouye{
+        width: 750px;
+        height: 109px;
+    }
+    .mynav{
+        width: 750px;
+        height: 109px;
+        text-align: center;
+    }
+    .navbar-header{
+        width: 668px;
+        height: 110px;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    .navbar-toggle{
+        border: none;
+        margin:20px 0 0 0;
+    }
+    .phone-button {
+        width: 165px;
+        height: 54px;
+        float: right;
+        line-height: 54px;
+        margin: 13px 46px;
+        font-weight: 300;
+        border-radius: 10px;
+        background: #cb5405;
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navbar-brand{
+        height: 79px;
+    }
+    .navbar-collapse{
+        background: #fff;
+    }
+    .navbar-nav{
+        height: 280px;
+        margin:0 auto;
+        line-height: 70px;
+    }
+    .navbar-default .navbar-nav>li>a{
+        display: inline;
+        font-size: 16px;
+        color: #000;
+    }
+    .navbar-default .navbar-nav>.active>a{
+        color: #e8420a;
+        background: none;
+        border-bottom: #e8420a 4px solid;
+    }
+    .navbar-default .navbar-nav>.active>a:hover{
+        color: #e8420a;
+        background: none;
+    }
+    .phone-img{
+        height: 365px;
+        width: 750px;
+        border-top: #434343 2px solid;
+        background: url(./img/pbanner.png) no-repeat;
+    }
+    .lunbozi{
+        width: 668px;
+        height: 110px;
+        margin: 64px auto;
+        color: #fff;
+    }
+    .pyouyou{
+        float: left;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .pquan{
+        float: left;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .phone-img>.lunbosearch>input{
+        width: 350px;
+        height: 66px;
+        font-size: 20px;
+        padding-left: 23px;
+    }
+    .lunbosearch{
+        width: 668px;
+        height: 66px;
+        margin: 0 auto;
+        border: 5px solid #222222;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .pmudidi{
+        float: left;
+        width: 164px;
+        height: 66px;
+        color: #666;
+        background-color: #d3d3d8;
+    }
+    .pmudidi>span{
+        display: block;
+        width: 164px;
+        height: 66px;
+        line-height: 66px;
+        font-size: 20px;
+        padding-left: 68px;
+        background: url(./img/position.png) no-repeat 30px center;
+    }
+    .psousuo{
+        float: right;
+        width: 144px;
+        height: 66px;
+        background-color: #cb5405;
+        cursor: pointer;
+    }
+    .psousuo>span{
+        display: block;
+        width: 143px;
+        height: 66px;
+        background: url(./img/search.png) no-repeat center center;
+    }
+    .mybanner{
+        width: 750px;
+        height: 198px;
+        margin: 20px 0;
+        background: #fff;
+    }
+    .che{
+        position: relative;
+        width: 668px;
+        height: 198px;
+        margin: 0 auto;
+    }
+    .che>span {
+        width: 93px;
+        height: 93px;
+        position: absolute;
+        top: 50px;
+        line-height: 93px;
+    }
+    .jichang{
+        width: 668px;
+        height: 198px;
+        padding-left: 120px;
+    }
+    .jichang1{
+        display: block;
+        float: left;
+        font-size: 30px;
+        color: #1c5080;
+        margin-top: 45px;
+        width: 500px;
+    }
+    .jichang2{
+        display: inline-block;
+        margin-top:15px;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 380;
+        color: #666;
+    }
+    .jichang3{
+        float: left;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 380;
+        color: #666;
+    }
+    .cheliang{
+        float: right;
+        text-align: center;
+        color: #666;
+    }
+    .cheliang>button{
+        width: 165px;
+        height: 55px;
+        line-height: 55px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        font-size: 28px;
+        font-weight: 330;
+        border: #666 solid 1px;
+        background: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .hotzi{
+        width: 750px;
+        height: 98px;
+        padding-top: 38px;
+        background: #fff;
+    }
+    .hotzi>span:first-child{
+        display: block;
+        width: 668px;
+        font-size: 30px;
+        font-weight: 360;
+        padding-left: 18px;
+        border-left:4px solid #cb5405;
+        margin: 0 auto;
+    }
+    .hotimg{
+        width:750px;
+        height: 969px;
+        background-color: #fff;
+    }
+    .hotimgbig{
+        width: 668px;
+        height: 969px;
+        margin: 0 auto;
+        padding-top: 18px;
+        border-top: #e8e8e8 solid 1px;
+
+    }
+    .hotimgbig>div{
+        position: relative;
+        width: 668px;
+        margin-bottom: 24px;
+        color: #fff;
+    }
+    .hotimgbig>div>img{
+        width: 668px;
+        height: 398px;
+    }
+    .hotimgbig>div>div{
+        position: absolute;
+        width: 668px;
+        height: 118px;
+        font-size: 26px;
+        padding-left: 18px;
+        padding-top: 20px;
+        line-height: 44px;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .7);
+        font-weight: 300;
+    }
+    .hotimgzi>div{
+        position: absolute;
+        top:40px;
+        left:470px;
+    }
+    .hotimgzi>div>span{
+        font-size: 20px;
+    }
+    .hotimgzi>div>span>span{
+        font-size: 30px;
+    }
+    .photchakan{
+        width: 226px;
+        height: 55px;
+        line-height: 55px;
+        display: block;
+        background: none;
+        font-size: 28px;
+        color: #666;
+        font-weight: 330;
+        border: #666 solid 1px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .qian{
+        width: 750px;
+        height: 98px;
+        padding-top: 38px;
+        margin-top: 20px;
+        background: #fff;
+    }
+    .qian1{
+        width: 668px;
+        display: block;
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: 360;
+        padding-left: 18px;
+        border-left:4px solid #cb5405  ;
+    }
+    .myqian{
+        width: 750px;
+        height: 465px;
+        background: #fff;
+    }
+    .myqianbox{
+        width: 668px;
+        height: 465px;
+        margin: 0 auto;
+        padding-top: 16px;
+        border-top:1px solid #e8e8e8;
+    }
+    .myqianimgbig1{
+        position: relative;
+        float: left;
+        width: 295px;
+        height: 408px;
+        color: #fff;
+    }
+    .myqianimgbig1>img{
+        width: 295px;
+        height: 408px;
+    }
+    .myqianimgbig1zi{
+        position: absolute;
+        width: 295px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 26px;
+        padding-left: 16px;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        font-weight: 340;
+    }
+    .myqianimgbig1>div>span{
+        font-size: 36px;
+    }
+    .myqianimgbig2{
+        float: right;
+        width: 364px;
+        height: 410px;
+    }
+    .myqianimgbig2>div>div{
+        position: relative;
+        width: 363px;
+        height: 197px;
+        margin-bottom: 14px;
+        color: #fff;
+    }
+    .pxin{
+        top: 210px;
+    }
+    .pmei{
+        top: -210px;
+    }
+    .myqianimgbig2>div>div>img{
+        width: 363px;
+        height: 197px;
+    }
+    .myqianimgbig2>div>div>div{
+        width: 363px;
+        height: 54px;
+        line-height: 54px;
+        position: absolute;
+        bottom: 0;
+        padding-left: 20px;
+        font-size: 26px;
+        background-color: rgba(0, 0, 0, 0.7);
+        font-weight: 340;
+    }
+    .myqianimgbig2>div>div>div>span {
+        float: right;
+        font-size: 36px;
+        font-weight: 340;
+        margin-right: 16px;
+    }
+    .pxin>div>span>span{
+        font-size: 18px;
+    }
+    .pmei>div>span>span{
+        font-size: 18px;
+    }
+    .myqianimgbig1zi>span>span{
+        font-size: 18px;
+    }
+    .chakanbig{
+        height: 107px;
+        width: 750px;
+        text-align: center;
+        background: #fff;
+        color: #666;
+    }
+    .chakan{
+        width: 227px;
+        height: 56px;
+        display: inline-block;
+        background:none;
+        font-size: 26px;
+        line-height: 56px;
+        border:1px solid #666;
+        border-radius: 10px;
+        font-weight: 340;
+        cursor: pointer;
+    }
+    .change{
+        width:764px;
+        margin-top:20px;
+        margin-left: -13px;
+        background: #fff;
+    }
+    .shimingzi{
+        width: 750px;
+        height: 98px;
+        margin-top: 20px;
+        padding-top: 36px;
+        background: #fff;
+    }
+    .shimingzi>span:first-child{
+        width: 668px;
+        display: block;
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: 360;
+        padding-left: 18px;
+        border-left:4px solid #cb5405;
+    }
+    .shimingzi>span:last-child{
+        font-size: 23px;
+        font-weight: 380;
+        float: right;
+        margin:-35px 190px 0 0;
+    }
+    .shimingbig{
+        width: 750px;
+        height: 686px;
+        text-align: center;
+        background: url(./img/back.png) #fff no-repeat top center;
+    }
+    .shimingbig>img{
+        width: 668px;
+        height: 377px;
+        padding-top: 49px;
+        border-top:1px solid #e8e8e8;
+    }
+    .shimingbig>div{
+        width: 668px;
+        height: 238px;
+        margin: 0 auto;
+        padding-top: 60px;
+        background: none;
+        font-size: 28px;
+    }
+    .shimingbig>div>p{
+        margin-top: 20px;
+        font-size: 22px;
+        line-height:38px;
+        text-align: left;
+    }
+    .pfuwu{
+        width: 750px;
+        height: 435px;
+        text-align: center;
+        background: #fff;
+    }
+    .pfuwu>img{
+        width: 668px;
+        height: 330px;
+    }
+    .pfuwu>div{
+        margin-top: 56px;
+        font-size: 30px;
+    }
+    .shimingbig2{
+        width: 750px;
+        height: 610px;
+        background: #fff;
+    }
+    .shimingbig2div1{
+        width: 668px;
+        height: 610px;
+        margin: 0 auto;
+    }
+    .shimingbig2div1div{
+        padding-left: 80px;
+    }
+    .miaoshu{
+        float: right;
+        font-size: 22px;
+        padding-right: 30px;
+        margin-top: 40px;
+    }
+    .shimingbig2div1div{
+        float: left;
+        width: 668px;
+        height: 180px;
+        border-bottom: #e8e8e8 1px solid;
+    }
+    .shimingbig2div1divzi1{
+        height: 180px;
+        line-height: 180px;
+    }
+    .butuidiv{
+        float: left;
+        width: 668px;
+        height: 190px;
+        border-bottom: #e8e8e8 1px solid;
+    }
+    .butuiimg{
+        height: 190px;
+        line-height: 190px;
+    }
+    .butui{
+        padding-right:186px;
+        margin-top: 63px;
+    }
+    .duli{
+        width: 668px;
+        height: 163px;
+        border-bottom: #e8e8e8 1px solid;
+    }
+    .duli>span {
+        height: 163px;
+        line-height: 163px;
+    }
+    .duli>p {
+        padding-right: 118px;
+        margin-top: 52px;
+    }
+    .last {
+        width: 750px;
+        height: 303px;
+        line-height: 38px;
+        background: #302e31;
+        color: #fff;
+        padding-top: 100px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 360;
+    }
+}
